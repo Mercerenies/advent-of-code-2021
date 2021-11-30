@@ -1,0 +1,6 @@
+*~
+*.class
+.apl.history
+a.out
+*.exe
+etc/
