@@ -18,3 +18,10 @@ The following languages will not be used in this challenge, as I used
 them last year: Forth, Perl, Fennel, Bash, Tcl, Common Lisp, Java,
 Factor, APL, JustBASIC, C, GDScript, Io, C#, Elixir, Javascript,
 OCaml, Haskell, Coffeescript, Python, Scala, Rust, Lua, C++, Ruby.
+
+## Day 1 - AWK
+
+* File(s): [day01](day01)
+* Language: [AWK](https://en.wikipedia.org/wiki/AWK)
+* Compiler / Interpreter: [GNU AWK](https://www.gnu.org/software/gawk/manual/gawk.html)
+* Notes: (None)
