@@ -24,4 +24,11 @@ OCaml, Haskell, Coffeescript, Python, Scala, Rust, Lua, C++, Ruby.
 * File(s): [day01](day01)
 * Language: [AWK](https://en.wikipedia.org/wiki/AWK)
 * Compiler / Interpreter: [GNU AWK](https://www.gnu.org/software/gawk/manual/gawk.html)
+* Notes: Pass the input filename as a command line argument to AWK
+
+## Day 2 - Ioke
+
+* File(s): [day02](day02)
+* Language: [Ioke](https://ioke.org/wiki/index.php/Main_Page)
+* Compiler / Interpreter: [Ioke for the JVM](https://ioke.org/download.html)
 * Notes: (None)
