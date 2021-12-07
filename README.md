@@ -39,3 +39,10 @@ OCaml, Haskell, Coffeescript, Python, Scala, Rust, Lua, C++, Ruby.
 * Language: [BeanShell](http://beanshell.org/)
 * Compiler / Interpreter: [bsh 2.0b4](http://beanshell.org/download.html)
 * Notes: (None)
+
+## Day 4 - J
+
+* File(s): [day04](day04)
+* Language: [J](http://jsoftware.com/)
+* Compiler / Interpreter: [j901](https://code.jsoftware.com/wiki/System/Installation)
+* Notes: (None)
