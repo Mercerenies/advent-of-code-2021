@@ -32,3 +32,10 @@ OCaml, Haskell, Coffeescript, Python, Scala, Rust, Lua, C++, Ruby.
 * Language: [Ioke](https://ioke.org/wiki/index.php/Main_Page)
 * Compiler / Interpreter: [Ioke for the JVM](https://ioke.org/download.html)
 * Notes: (None)
+
+## Day 3 - BeanShell
+
+* File(s): [day03](day03)
+* Language: [BeanShell](http://beanshell.org/)
+* Compiler / Interpreter: [bsh 2.0b4](http://beanshell.org/download.html)
+* Notes: (None)

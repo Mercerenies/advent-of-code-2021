@@ -1,0 +1,61 @@
+// -*- Java -*- (Syntax is fairly close, so this works)
+
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.nio.charset.Charset;
+
+countUp(lines) {
+  counts = new HashMap();
+  for (j = 0; j < lines.size(); j++) {
+    curr = lines.get(j).charAt(i);
+    counts.put(curr, counts.getOrDefault(curr, 0) + 1);
+  }
+  return counts;
+}
+
+filterBy(lines, index, chr) {
+  newLines = new ArrayList();
+  for (k = 0; k < lines.size(); k++) {
+    line = lines.get(k);
+    if (line.charAt(index) == chr) {
+      newLines.add(line);
+    }
+  }
+  return newLines;
+}
+
+originalLines = Files.readAllLines(Paths.get("input.txt", new String[]{}), Charset.defaultCharset());
+
+// Oxygen
+lines = originalLines;
+for (i = 0; i < lines.get(0).length(); i++) {
+  if (lines.size() == 1) {
+    break;
+  }
+  counts = countUp(lines);
+  if (counts.getOrDefault('0', 0) > counts.getOrDefault('1', 0)) {
+    max = '0';
+  } else {
+    max = '1';
+  }
+  lines = filterBy(lines, i, max);
+}
+oxygen = Integer.parseInt(lines.get(0), 2);
+
+// CO2
+lines = originalLines;
+for (i = 0; i < lines.get(0).length(); i++) {
+  if (lines.size() == 1) {
+    break;
+  }
+  counts = countUp(lines);
+  if (counts.getOrDefault('0', 0) > counts.getOrDefault('1', 0)) {
+    min = '1';
+  } else {
+    min = '0';
+  }
+  lines = filterBy(lines, i, min);
+}
+co2 = Integer.parseInt(lines.get(0), 2);
+
+System.out.println(oxygen * co2);

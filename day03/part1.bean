@@ -1,0 +1,27 @@
+// -*- Java -*- (Syntax is fairly close, so this works)
+
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.nio.charset.Charset;
+
+gamma = "";
+epsilon = "";
+lines = Files.readAllLines(Paths.get("input.txt", new String[]{}), Charset.defaultCharset());
+for (i = 0; i < lines.get(0).length(); i++) {
+  counts = new HashMap();
+  for (j = 0; j < lines.size(); j++) {
+    curr = lines.get(j).charAt(i);
+    counts.put(curr, counts.getOrDefault(curr, 0) + 1);
+  }
+  if (counts.getOrDefault('0', 0) > counts.getOrDefault('1', 0)) {
+    gamma += '0';
+    epsilon += '1';
+  } else {
+    gamma += '1';
+    epsilon += '0';
+  }
+}
+
+gamma = Integer.parseInt(gamma, 2);
+epsilon = Integer.parseInt(epsilon, 2);
+System.out.println(gamma * epsilon);
