@@ -60,3 +60,10 @@ OCaml, Haskell, Coffeescript, Python, Scala, Rust, Lua, C++, Ruby.
 * Language: [Prolog](https://en.wikipedia.org/wiki/Prolog)
 * Compiler / Interpreter: [SWI Prolog](https://www.swi-prolog.org/)
 * Notes: SWIPL's default settings will drop you in a Prolog interpreter after the program completes; use `halt.` to exit.
+
+## Day 7 - Pike
+
+* File(s): [day07](day07)
+* Language: [Pike](http://pike.lysator.liu.se/)
+* Compiler / Interpreter: [Pike v8.0](http://pike.lysator.liu.se/download/)
+* Notes: (None)
