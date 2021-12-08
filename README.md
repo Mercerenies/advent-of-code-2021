@@ -24,7 +24,7 @@ OCaml, Haskell, Coffeescript, Python, Scala, Rust, Lua, C++, Ruby.
 * File(s): [day01](day01)
 * Language: [AWK](https://en.wikipedia.org/wiki/AWK)
 * Compiler / Interpreter: [GNU AWK](https://www.gnu.org/software/gawk/manual/gawk.html)
-* Notes: Pass the input filename as a command line argument to AWK
+* Notes: Pass the input filename as a command line argument to AWK.
 
 ## Day 2 - Ioke
 
@@ -46,3 +46,10 @@ OCaml, Haskell, Coffeescript, Python, Scala, Rust, Lua, C++, Ruby.
 * Language: [J](http://jsoftware.com/)
 * Compiler / Interpreter: [j901](https://code.jsoftware.com/wiki/System/Installation)
 * Notes: (None)
+
+## Day 5 - Javagony
+
+* File(s): [day05](day05)
+* Language: [Javagony](https://esolangs.org/wiki/Javagony)
+* Compiler / Interpreter: [openjdk 11.0.9](http://openjdk.java.net/)
+* Notes: A somewhat slow solution.
