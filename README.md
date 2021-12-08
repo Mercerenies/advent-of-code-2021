@@ -53,3 +53,10 @@ OCaml, Haskell, Coffeescript, Python, Scala, Rust, Lua, C++, Ruby.
 * Language: [Javagony](https://esolangs.org/wiki/Javagony)
 * Compiler / Interpreter: [openjdk 11.0.9](http://openjdk.java.net/)
 * Notes: A somewhat slow solution.
+
+## Day 6 - Prolog
+
+* File(s): [day06](day06)
+* Language: [Prolog](https://en.wikipedia.org/wiki/Prolog)
+* Compiler / Interpreter: [SWI Prolog](https://www.swi-prolog.org/)
+* Notes: SWIPL's default settings will drop you in a Prolog interpreter after the program completes; use `halt.` to exit.
