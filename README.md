@@ -67,3 +67,10 @@ OCaml, Haskell, Coffeescript, Python, Scala, Rust, Lua, C++, Ruby.
 * Language: [Pike](http://pike.lysator.liu.se/)
 * Compiler / Interpreter: [Pike v8.0](http://pike.lysator.liu.se/download/)
 * Notes: (None)
+
+## Day 8 - MoonScript
+
+* File(s): [day08](day08)
+* Language: [MoonScript](https://moonscript.org/)
+* Compiler / Interpreter: [The official compiler](https://moonscript.org/#installation)
+* Notes: A somewhat slow solution.
