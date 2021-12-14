@@ -74,3 +74,10 @@ OCaml, Haskell, Coffeescript, Python, Scala, Rust, Lua, C++, Ruby.
 * Language: [MoonScript](https://moonscript.org/)
 * Compiler / Interpreter: [The official compiler](https://moonscript.org/#installation)
 * Notes: A somewhat slow solution.
+
+## Day 9 - Julia
+
+* File(s): [day09](day09)
+* Language: [Julia](https://julialang.org/)
+* Compiler / Interpreter: [Julia 1.2.0](https://julialang.org/downloads/)
+* Notes: (None)
