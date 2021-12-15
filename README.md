@@ -81,3 +81,10 @@ OCaml, Haskell, Coffeescript, Python, Scala, Rust, Lua, C++, Ruby.
 * Language: [Julia](https://julialang.org/)
 * Compiler / Interpreter: [Julia 1.2.0](https://julialang.org/downloads/)
 * Notes: (None)
+
+## Day 10 - SNOBOL
+
+* File: [day10](day10)
+* Language: [SNOBOL](http://www.snobol4.org/)
+* Compiler / Interpreter: [CSNOBOL4B v2.2.2](http://www.snobol4.org/csnobol4/curr/)
+* Notes: (None)

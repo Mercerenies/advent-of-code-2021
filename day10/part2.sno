@@ -1,0 +1,64 @@
+* 200 score slots should be more than enough
+START     INPUT(.INFILE,20,"","input.txt")   :F(FAILURE)
+          SCORES = ARRAY(200)
+          LINUM = 1
+
+* Read the file in line-by-line
+LINELOOP  LINE = INFILE                      :F(EOF)
+          POS = 1
+          STACK = ARRAY(SIZE(LINE))
+          STACKPOS = 1
+
+CHARLOOP  LE(POS, SIZE(LINE))                :F(ELINELOOP)
+          CH = SUBSTR(LINE,POS,1)
+          LEQ(CH, "(")                       :S(OPENING)
+          LEQ(CH, "[")                       :S(OPENING)
+          LEQ(CH, "{")                       :S(OPENING)
+          LEQ(CH, "<")                       :S(OPENING)
+          LEQ(CH, ")")                       :S(CLOSINGP)
+          LEQ(CH, "]")                       :S(CLOSINGB)
+          LEQ(CH, "}")                       :S(CLOSINGC)
+          LEQ(CH, ">")                       :S(CLOSINGA)
+                                             : (FAILURE)
+
+OPENING   STACK<STACKPOS> = CH
+          STACKPOS = STACKPOS + 1            : (ECHARLOOP)
+
+CLOSINGP  OPENER = "("                       : (CLOSING)
+CLOSINGB  OPENER = "["                       : (CLOSING)
+CLOSINGC  OPENER = "{"                       : (CLOSING)
+CLOSINGA  OPENER = "<"                       : (CLOSING)
+CLOSING   MATCHING = STACK<STACKPOS - 1>
+          LEQ(OPENER, MATCHING)              :F(LINELOOP)
+          STACKPOS = STACKPOS - 1
+
+ECHARLOOP POS = POS + 1                      : (CHARLOOP)
+
+* Assuming we reached the end "normally"
+* and didn't corrupt, then start counting
+* the score
+ELINELOOP TOTALSCORE = 0
+
+SCORELOOP STACKPOS = STACKPOS - 1
+          GE(STACKPOS, 1)                    :F(ESCRELOOP)
+          CH = STACK<STACKPOS>
+          LEQ(CH, "(")                       :S(SCOREP)
+          LEQ(CH, "[")                       :S(SCOREB)
+          LEQ(CH, "{")                       :S(SCOREC)
+          LEQ(CH, "<")                       :S(SCOREA)
+                                             : (FAILURE)
+
+SCOREP    S = 1                              : (SCOREUP)
+SCOREB    S = 2                              : (SCOREUP)
+SCOREC    S = 3                              : (SCOREUP)
+SCOREA    S = 4                              : (SCOREUP)
+SCOREUP   TOTALSCORE = TOTALSCORE * 5 + S    : (SCORELOOP)
+ESCRELOOP SCORES<LINUM> = TOTALSCORE
+          LINUM = LINUM + 1                  : (LINELOOP)
+
+EOF       SCORES = SORT(SCORES)
+          HALFWAY = (LINUM + 1) / 2
+          MIDDLEIDX = PROTOTYPE(SCORES) - HALFWAY + 1
+          OUTPUT = SCORES<MIDDLEIDX>         : (END)
+FAILURE   OUTPUT = "Error reading file..."
+END

@@ -1,0 +1,43 @@
+START     CORRUPTION = 0
+          INPUT(.INFILE,20,"","input.txt") :F(FAILURE)
+
+* Read the file in line-by-line
+LINELOOP  LINE = INFILE                    :F(EOF)
+          POS = 1
+          STACK = ARRAY(SIZE(LINE))
+          STACKPOS = 1
+
+CHARLOOP  LE(POS, SIZE(LINE))              :F(LINELOOP)
+          CH = SUBSTR(LINE,POS,1)
+          LEQ(CH, "(")                     :S(OPENING)
+          LEQ(CH, "[")                     :S(OPENING)
+          LEQ(CH, "{")                     :S(OPENING)
+          LEQ(CH, "<")                     :S(OPENING)
+          LEQ(CH, ")")                     :S(CLOSINGP)
+          LEQ(CH, "]")                     :S(CLOSINGB)
+          LEQ(CH, "}")                     :S(CLOSINGC)
+          LEQ(CH, ">")                     :S(CLOSINGA)
+                                           : (FAILURE)
+
+OPENING   STACK<STACKPOS> = CH
+          STACKPOS = STACKPOS + 1          : (ECHARLOOP)
+
+CLOSINGP  OPENER = "("
+          SCORE = 3                        : (CLOSING)
+CLOSINGB  OPENER = "["
+          SCORE = 57                       : (CLOSING)
+CLOSINGC  OPENER = "{"
+          SCORE = 1197                     : (CLOSING)
+CLOSINGA  OPENER = "<"
+          SCORE = 25137                    : (CLOSING)
+CLOSING   MATCHING = STACK<STACKPOS - 1>
+          LEQ(OPENER, MATCHING)            :S(CLGOOD)
+* Corrupted; count the score and move on
+          CORRUPTION = CORRUPTION + SCORE  : (LINELOOP)
+CLGOOD    STACKPOS = STACKPOS - 1
+
+ECHARLOOP POS = POS + 1                    : (CHARLOOP)
+
+EOF       OUTPUT = CORRUPTION              : (END)
+FAILURE   OUTPUT = "Error reading file..."
+END
