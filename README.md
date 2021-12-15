@@ -88,3 +88,9 @@ OCaml, Haskell, Coffeescript, Python, Scala, Rust, Lua, C++, Ruby.
 * Language: [SNOBOL](http://www.snobol4.org/)
 * Compiler / Interpreter: [CSNOBOL4B v2.2.2](http://www.snobol4.org/csnobol4/curr/)
 * Notes: (None)
+
+## Day 11 - Go
+* File: [day11](day11)
+* Language: [Go](https://golang.org/)
+* Compiler / Interpreter: [go1.12.2 (GCC)](https://golang.org/doc/install)
+* Notes: (None)
