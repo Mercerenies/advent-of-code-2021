@@ -94,3 +94,9 @@ OCaml, Haskell, Coffeescript, Python, Scala, Rust, Lua, C++, Ruby.
 * Language: [Go](https://golang.org/)
 * Compiler / Interpreter: [go1.12.2 (GCC)](https://golang.org/doc/install)
 * Notes: (None)
+
+## Day 12 - Erlang
+* File: [day12](day12)
+* Language: [Erlang](https://www.erlang.org/)
+* Compiler / Interpreter: [Erlang emulator v10.7.2.4](https://www.erlang.org/downloads)
+* Notes: (None)
