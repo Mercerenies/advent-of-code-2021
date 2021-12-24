@@ -100,3 +100,9 @@ OCaml, Haskell, Coffeescript, Python, Scala, Rust, Lua, C++, Ruby.
 * Language: [Erlang](https://www.erlang.org/)
 * Compiler / Interpreter: [Erlang emulator v10.7.2.4](https://www.erlang.org/downloads)
 * Notes: (None)
+
+## Day 13 - AutoHotKey
+* File: [day13](day13)
+* Language: [AutoHotkey](https://www.autohotkey.com/)
+* Compiler / Interpreter: [AutoHotkey](https://www.autohotkey.com/)
+* Notes: (None)
