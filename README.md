@@ -106,3 +106,9 @@ OCaml, Haskell, Coffeescript, Python, Scala, Rust, Lua, C++, Ruby.
 * Language: [AutoHotkey](https://www.autohotkey.com/)
 * Compiler / Interpreter: [AutoHotkey](https://www.autohotkey.com/)
 * Notes: (None)
+
+## Day 14 - Glava
+* File: [day14](day14)
+* Language: [Glava](https://esolangs.org/wiki/Glava)
+* Compiler / Interpreter: [The provided interpreter](https://github.com/ZekNikZ/Glava)
+* Notes: (None)

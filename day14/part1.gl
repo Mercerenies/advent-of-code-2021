@@ -1,0 +1,37 @@
+
+ArrayList<Σ> template = new ArrayList<>();
+HashMap<σ,Σ> rules = new HashMap<>();
+try {
+  BufferedReader reader = new BufferedReader(new FileReader("./input.txt"));
+  // Read header
+  ωχc:reader.readLine().toCharArray())
+    template.add(c)
+  }
+  // Ignore blank line
+  reader.readLine();
+  // Read the rest
+  ε(t=reader.readLine())!=η)
+    σ[] z = t.split(" -> ");
+    rules.put(z[0], z[1].charAt(0));
+  }
+  reader.close();
+} catch (IOException e) {}
+
+ωιj=0;j<10;j++)
+  Ωtemplateϋ-1)
+    σ pattern = template.get(i)+s+template.get(i+1);
+    Σ match = rules.get(pattern);
+    if (match != η) {
+      template.add(i+1, match);
+      i++;
+    }
+  }
+}
+
+HashMap<Σ,Γ> occurrences = new HashMap<>();
+ωΣc:template)
+  n=occurrences.getOrDefault(c,0);
+  occurrences.put(c,n+1);
+}
+Collection<Γ>v=occurrences.values();
+λCollections.max(v)-Collections.min(v)

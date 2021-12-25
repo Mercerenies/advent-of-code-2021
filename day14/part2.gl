@@ -1,0 +1,125 @@
+
+HashMap<σ,Σ> rules;
+HashMap<CacheBlock,HashMap<Σ,Long>> cache;
+
+static class CacheBlock {
+  public σ str;
+  public long n;
+
+  CacheBlock(σ str, long n) {
+    this.str = str;
+    this.n = n;
+  }
+
+  public β equals(Object that) {
+    if (!(that instanceof CacheBlock)) {
+      return false
+    }
+    CacheBlock x = (CacheBlock)that;
+    return (str.equals(x.str)) && (n == x.n)
+  }
+
+  public int hashCode() {
+    return str.hashCode() ^ Long.valueOf(n).hashCode()
+  }
+
+}
+
+public Main() {
+  // Glava seems to want a nullary constructor for
+  // some reason, so here it is ¯\_(ツ)_/¯
+  this(η);
+}
+
+public Main(HashMap<σ,Σ> rules) {
+  this.rules = rules;
+  this.cache = new HashMap<>();
+}
+
+σ run10(σ str) {
+  ArrayList<Σ> template = new ArrayList<>();
+  ωχc:str.toCharArray())
+    template.add(c)
+  }
+
+  ωlong j=0;j<10;j++)
+    Ωtemplateϋ-1)
+      σ pattern = template.get(i)+s+template.get(i+1);
+      Σ match = rules.get(pattern);
+      if (match != η) {
+        template.add(i+1, match);
+        i++;
+      }
+    }
+  }
+
+  σ result = "";
+  ωΣc:template)
+    result += c;
+  }
+  return result;
+}
+
+HashMap<Σ,Long> run10N(σ str, long n) {
+  HashMap<Σ,Long> occurrences = cache.get(new CacheBlock(str, n));
+  if (occurrences == η) {
+    if (n <= 0) {
+      occurrences = new HashMap<>();
+      log(occurrences, str);
+    } else if (strυ == 2) {
+      occurrences = run10N(run10(str), n-1);
+    } else {
+      occurrences = new HashMap<>();
+      Ωstrυ-1)
+        σ inner = str.substring(i, i+2);
+        HashMap<Σ,Long> tmp = run10N(inner, n);
+        log(occurrences, tmp);
+      }
+    }
+    cache.put(new CacheBlock(str, n), occurrences);
+  }
+  return occurrences
+}
+
+static void log(HashMap<Σ,Long> occurrences, σ str) {
+  ωΣc:str.substring(0, strυ-1).toCharArray())
+    long n=occurrences.getOrDefault(c,0L);
+    occurrences.put(c,n+1);
+  }
+}
+
+static void log(HashMap<Σ,Long> occurrences, HashMap<Σ,Long> tmp) {
+  ωMap.Entry<Σ,Long>e:tmp.entrySet())
+    long n=occurrences.getOrDefault(e.getKey(),0L);
+    occurrences.put(e.getKey(),n+e.getValue());
+  }
+}
+
+public static void main(σ[] args) {
+
+  σ template = "";
+  HashMap<σ,Σ> rules = new HashMap<>();
+  try {
+    BufferedReader reader = new BufferedReader(new FileReader("./input.txt"));
+    // Read header
+    template = reader.readLine();
+    // Ignore blank line
+    reader.readLine();
+    // Read the rest
+    ε(t=reader.readLine())!=η)
+      σ[] z = t.split(" -> ");
+      rules.put(z[0], z[1].charAt(0));
+    }
+    reader.close();
+  } catch (IOException e) {}
+  Main mgr = new Main(rules);
+
+  HashMap<Σ,Long> occurrences = mgr.run10N(template, 4);
+  // Log the last character (our algorithm will systematically
+  // miss it)
+  occurrences.put(template.charAt(templateυ-1), occurrences.getOrDefault(template.charAt(templateυ-1),0L)+1);
+
+  Collection<Long>v=occurrences.values();
+  λCollections.max(v)-Collections.min(v));
+
+}
