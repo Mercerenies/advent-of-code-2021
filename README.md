@@ -84,37 +84,43 @@ OCaml, Haskell, Coffeescript, Python, Scala, Rust, Lua, C++, Ruby.
 
 ## Day 10 - SNOBOL
 
-* File: [day10](day10)
+* File(s): [day10](day10)
 * Language: [SNOBOL](http://www.snobol4.org/)
 * Compiler / Interpreter: [CSNOBOL4B v2.2.2](http://www.snobol4.org/csnobol4/curr/)
 * Notes: (None)
 
 ## Day 11 - Go
-* File: [day11](day11)
+* File(s): [day11](day11)
 * Language: [Go](https://golang.org/)
 * Compiler / Interpreter: [go1.12.2 (GCC)](https://golang.org/doc/install)
 * Notes: (None)
 
 ## Day 12 - Erlang
-* File: [day12](day12)
+* File(s): [day12](day12)
 * Language: [Erlang](https://www.erlang.org/)
 * Compiler / Interpreter: [Erlang emulator v10.7.2.4](https://www.erlang.org/downloads)
 * Notes: (None)
 
 ## Day 13 - AutoHotKey
-* File: [day13](day13)
+* File(s): [day13](day13)
 * Language: [AutoHotkey](https://www.autohotkey.com/)
 * Compiler / Interpreter: [AutoHotkey](https://www.autohotkey.com/)
 * Notes: (None)
 
 ## Day 14 - Glava
-* File: [day14](day14)
+* File(s): [day14](day14)
 * Language: [Glava](https://esolangs.org/wiki/Glava)
 * Compiler / Interpreter: [The provided interpreter](https://github.com/ZekNikZ/Glava)
 * Notes: (None)
 
 ## Day 15 - PHP
-* File: [day15](day15)
+* File(s): [day15](day15)
 * Language: [PHP](https://www.php.net/)
 * Compiler / Interpreter: [PHP 7.3.24](https://www.php.net/downloads)
 * Notes: A somewhat slow solution.
+
+## Day 16 - Z shell
+* File(s): [day16](day16)
+* Language: [Z shell](https://en.wikipedia.org/wiki/Z_shell)
+* Compiler / Interpreter: [zsh 5.7.1](https://sourceforge.net/p/zsh/code/ci/master/tree/)
+* Notes: (None)
