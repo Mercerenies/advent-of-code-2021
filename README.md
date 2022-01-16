@@ -124,3 +124,9 @@ OCaml, Haskell, Coffeescript, Python, Scala, Rust, Lua, C++, Ruby.
 * Language: [Z shell](https://en.wikipedia.org/wiki/Z_shell)
 * Compiler / Interpreter: [zsh 5.7.1](https://sourceforge.net/p/zsh/code/ci/master/tree/)
 * Notes: (None)
+
+## Day 17 - NASM
+* File(s): [day17](day17)
+* Language: [NASM](https://nasm.us/)
+* Compiler / Interpreter: [NASM v2.14.02](https://www.nasm.us/pub/nasm/releasebuilds/2.14.02/) + [GCC](https://gcc.gnu.org/) Linker
+* Notes: 64-bit architectures, only; assumes System V calling conventions.
