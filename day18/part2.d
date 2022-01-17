@@ -1,5 +1,5 @@
 
-module part1;
+module part2;
 
 import std.stdio;
 import std.variant;
