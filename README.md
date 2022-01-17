@@ -130,3 +130,9 @@ OCaml, Haskell, Coffeescript, Python, Scala, Rust, Lua, C++, Ruby.
 * Language: [NASM](https://nasm.us/)
 * Compiler / Interpreter: [NASM v2.14.02](https://www.nasm.us/pub/nasm/releasebuilds/2.14.02/) + [GCC](https://gcc.gnu.org/) Linker
 * Notes: 64-bit architectures, only; assumes System V calling conventions.
+
+## Day 18 - D
+* File(s): [day18](day18)
+* Language: [D](https://dlang.org/)
+* Compiler / Interpreter: [gdc 9.3.1](https://sourceforge.net/projects/dgcc/)
+* Notes: (None)
