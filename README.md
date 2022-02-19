@@ -136,3 +136,9 @@ OCaml, Haskell, Coffeescript, Python, Scala, Rust, Lua, C++, Ruby.
 * Language: [D](https://dlang.org/)
 * Compiler / Interpreter: [gdc 9.3.1](https://sourceforge.net/projects/dgcc/)
 * Notes: (None)
+
+## Day 19 - Ceylon
+* File(s): [day19](day19)
+* Language: [Ceylon](https://ceylon-lang.org/)
+* Compiler / Interpreter: [ceylon 1.3.3](https://ceylon-lang.org/download/)
+* Notes: A somewhat slow solution; the provided `build.sh` may be helpful in building the source.
