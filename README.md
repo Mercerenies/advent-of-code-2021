@@ -142,3 +142,9 @@ OCaml, Haskell, Coffeescript, Python, Scala, Rust, Lua, C++, Ruby.
 * Language: [Ceylon](https://ceylon-lang.org/)
 * Compiler / Interpreter: [ceylon 1.3.3](https://ceylon-lang.org/download/)
 * Notes: A somewhat slow solution; the provided `build.sh` may be helpful in building the source.
+
+## Day 20 - Clojure
+* File(s): [day20](day20)
+* Language: [Clojure](https://clojure.org/)
+* Compiler / Interpreter: [clojure 1.10.1.561](https://clojure.org/releases/downloads)
+* Notes: A somewhat slow solution.
