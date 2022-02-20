@@ -148,3 +148,9 @@ OCaml, Haskell, Coffeescript, Python, Scala, Rust, Lua, C++, Ruby.
 * Language: [Clojure](https://clojure.org/)
 * Compiler / Interpreter: [clojure 1.10.1.561](https://clojure.org/releases/downloads)
 * Notes: A somewhat slow solution.
+
+## Day 21 - Raku
+* File(s): [day21](day21)
+* Language: [Raku](https://raku.org/)
+* Compiler / Interpreter: [Rakudo 2020.01](https://raku.org/downloads)
+* Notes: (None)
