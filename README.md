@@ -154,3 +154,9 @@ OCaml, Haskell, Coffeescript, Python, Scala, Rust, Lua, C++, Ruby.
 * Language: [Raku](https://raku.org/)
 * Compiler / Interpreter: [Rakudo 2020.01](https://raku.org/downloads)
 * Notes: (None)
+
+## Day 22 - Emacs Lisp
+* File(s): [day22](day22)
+* Language: [Emacs Lisp](https://www.gnu.org/software/emacs/)
+* Compiler / Interpreter: [Emacs 27.2](https://www.gnu.org/software/emacs/download.html)
+* Notes: A somewhat slow solution.
