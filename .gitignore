@@ -6,3 +6,4 @@ a.out
 etc/
 *.o
 *.elc
+META-INF/

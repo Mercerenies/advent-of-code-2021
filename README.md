@@ -160,3 +160,9 @@ OCaml, Haskell, Coffeescript, Python, Scala, Rust, Lua, C++, Ruby.
 * Language: [Emacs Lisp](https://www.gnu.org/software/emacs/)
 * Compiler / Interpreter: [Emacs 27.2](https://www.gnu.org/software/emacs/download.html)
 * Notes: A somewhat slow solution.
+
+## Day 23 - Kotlin
+* File(s): [day23](day23)
+* Language: [Kotlin](https://kotlinlang.org/)
+* Compiler / Interpreter: [kotlinc-jvm 1.5.0](https://kotlinlang.org/docs/command-line.html)
+* Notes: (None)
