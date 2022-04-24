@@ -172,3 +172,9 @@ OCaml, Haskell, Coffeescript, Python, Scala, Rust, Lua, C++, Ruby.
 * Language: [Racket](https://racket-lang.org/)
 * Compiler / Interpreter: [Racket v8.3 (cs)](https://download.racket-lang.org/)
 * Notes: (None)
+
+## Day 25 - Typescript
+* File(s): [day25](day25)
+* Language: [Typescript](https://www.typescriptlang.org/)
+* Compiler / Interpreter: [tsc 4.4.3](https://www.typescriptlang.org/download/)
+* Notes: Compile with `--target ES2016` to allow newer class features to work.
