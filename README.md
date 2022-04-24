@@ -166,3 +166,9 @@ OCaml, Haskell, Coffeescript, Python, Scala, Rust, Lua, C++, Ruby.
 * Language: [Kotlin](https://kotlinlang.org/)
 * Compiler / Interpreter: [kotlinc-jvm 1.5.0](https://kotlinlang.org/docs/command-line.html)
 * Notes: (None)
+
+## Day 24 - Racket
+* File(s): [day24](day24)
+* Language: [Racket](https://racket-lang.org/)
+* Compiler / Interpreter: [Racket v8.3 (cs)](https://download.racket-lang.org/)
+* Notes: (None)
